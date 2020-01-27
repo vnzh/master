@@ -40,12 +40,15 @@ public class ZhirovVLesson4 {
         System.out.println("Средняя заплата =   " + Employee.averageSalary(employees));
         System.out.println("Средний возраст =   " + Employee.averageAge(employees));
 
+        salaryUp(45, 5000);
+        System.out.println(employees[4].toString());
     }//main
 
-    static void salaryUp(int age){
+    //* Создать метод, повышающий зарплату всем сотрудникам старше 45 лет на 5000.
+    static void salaryUp(int age, double up){
         for (int i = 0; i <employees.length ; i++) {
             if (employees[i].getAge() > 45 ) {
-                employees[i].setSalary(employees[i].getSalary() + 5000);
+                employees[i].setSalary(employees[i].getSalary() + up);
             }
         }
     }//salaryUp
