@@ -14,26 +14,26 @@ public class ZhirovVLesson6 {
 
     public  static void main (String[] args) throws IOException {
 
-//        FileInputStream fileInputStream = null;
-//        FileOutputStream outputStream = null;
-//        try {
-//             fileInputStream = new FileInputStream("D:\\txt\\1.txt");
-//             outputStream = new FileOutputStream("D:\\txt\\2.txt", true);
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        while (fileInputStream.available() > 0) {
-//
-//            outputStream.write(fileInputStream.read());
-//        }
-//
-//        fileInputStream.close();
-//        outputStream.close();
-//
-//        fileInputStream = new FileInputStream("D:\\txt\\2.txt");
-//        while (fileInputStream.available() > 0) {
-//            System.out.print(fileInputStream.read());
-//        }
+        FileInputStream fileInputStream = null;
+        FileOutputStream outputStream = null;
+        try {
+             fileInputStream = new FileInputStream("D:\\txt\\1.txt");
+             outputStream = new FileOutputStream("D:\\txt\\2.txt", true);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        while (fileInputStream.available() > 0) {
+
+            outputStream.write(fileInputStream.read());
+        }
+
+        fileInputStream.close();
+        outputStream.close();
+
+        fileInputStream = new FileInputStream("D:\\txt\\2.txt");
+        while (fileInputStream.available() > 0) {
+            System.out.print(fileInputStream.read());
+        }
 
 
         //При использовании сканнера   не удалось  сразу  читать по словам. Как  я почитал описание,
