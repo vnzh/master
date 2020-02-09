@@ -69,6 +69,7 @@ public class GameWindow extends JFrame implements Serializable {
            sv = (SaveSettings) ois.readObject();
         } catch (Exception e) {
             e.printStackTrace();
+            settings.setVisible(true);
         }
 
         map.startNewGame(sv.getGameMode(), sv.getFieldSizeX(), sv.getFieldSizeY(), sv.getWinLength());
